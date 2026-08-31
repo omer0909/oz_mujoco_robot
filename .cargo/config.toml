@@ -1,0 +1,6 @@
+[env]
+MUJOCO_LIB = { value = "../deps/mujoco-3.10.0/lib", relative = true }
+PKG_CONFIG_PATH = { value = "../deps/glfw-3.5.1/lib/pkgconfig", relative = true }
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "link-arg=-Wl,-rpath,$ORIGIN,-rpath,$ORIGIN/../../../deps/mujoco-3.10.0/lib"]

@@ -1,0 +1,9 @@
+[package]
+name = "oz_mujoco_robot"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+rusty_mujoco = "0.4"
+glfw = "0.60"
